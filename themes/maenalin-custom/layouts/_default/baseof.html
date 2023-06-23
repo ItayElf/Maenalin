@@ -6,8 +6,10 @@
   {{- partial "head.html" . -}}
   <body>
     {{- partial "header.html" . -}}
-    <div id="content" class="container">
-      {{- block "main" . }}{{- end }}
+    <div class="container mx-auto mt-12 rounded bg-white p-4">
+      <div id="content">
+        {{- block "main" . }}{{- end }}
+      </div>
     </div>
     {{- partial "footer.html" . -}}
   </body>
