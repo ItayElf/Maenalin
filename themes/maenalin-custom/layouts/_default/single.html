@@ -3,17 +3,8 @@
   {{ .Site.Title }}
 {{ end }}
 {{ define "main" }}
-  <div class="flex space-x-1 space-x-reverse">
-    <p>
-      <a href="/">{{ .Site.Title }}</a>
-      <span>></span>
-    </p>
-    {{ range .Site.Sections }}
-      <a href="{{ .Permalink }}">{{ .Title }}</a>
-      <span>></span>
-    {{ end }}
-    <p>{{ .Page.Title }}</p>
-  </div>
+  {{- partial "hierarchy.html" . -}}
+
 
   <h1 class="text-6xl font-light">{{ .Title }}</h1>
   <hr />

@@ -1,4 +1,11 @@
+{{ define "title" }}
+  {{ .Title }} |
+  {{ .Site.Title }}
+{{ end }}
 {{ define "main" }}
+  {{- partial "hierarchy.html" . -}}
+
+
   <h1>Posts</h1>
   {{ range .Pages }}
     <article>
@@ -6,4 +13,5 @@
       {{ .Content }}
     </article>
   {{ end }}
+
 {{ end }}
