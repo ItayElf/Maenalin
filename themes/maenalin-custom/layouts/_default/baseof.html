@@ -4,7 +4,7 @@
   dir="{{ .Site.Language.LanguageDirection | default "rtl" }}"
 >
   {{- partial "head.html" . -}}
-  <body>
+  <body style="background-image:url('{{ "images/background.jpg" | relURL }}')">
     {{- partial "header.html" . -}}
     <div class="container mx-auto mt-12 rounded bg-white p-4">
       <div id="content">
