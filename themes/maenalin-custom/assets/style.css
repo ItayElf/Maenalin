@@ -565,6 +565,10 @@ video {
   margin-top: 3rem;
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
 .block {
   display: block;
 }
@@ -580,4 +584,8 @@ video {
 
 .p-4 {
   padding: 1rem;
+}
+
+.text-center {
+  text-align: center;
 }
