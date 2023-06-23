@@ -1,6 +1,7 @@
 baseURL: "https://itayelf.github.io/Maenalin/"
 languageCode: "he-il"
 languagedirection: rtl
+defaultContentLanguage: he
 title: "מנאלין"
 theme: "maenalin-custom"
 enableGitInfo: true

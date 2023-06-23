@@ -829,6 +829,14 @@ hr {
   font-weight: 400;
 }
 
+.italic {
+  font-style: italic;
+}
+
+.text-black\/70 {
+  color: rgb(0 0 0 / 0.7);
+}
+
 #TableOfContents > * > li {
   border-radius: 0.25rem;
 }
