@@ -2,7 +2,13 @@
 module.exports = {
   content: ["content/**/*.md", "layouts/**/*.html"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: {
+          DEFAULT: "#a20021",
+        },
+      },
+    },
   },
   plugins: [],
 };

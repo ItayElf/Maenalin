@@ -5,6 +5,12 @@ title: "מנאלין"
 theme: "maenalin-custom"
 enableGitInfo: true
 
+markup:
+  tableOfContents:
+    startLevel: 3
+    endLevel: 3
+    ordered: false
+
 frontmatter:
   date:
     - date

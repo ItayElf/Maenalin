@@ -1,9 +1,24 @@
 {{ define "title" }}
-  <!-- This will override the default value set in baseof.html; i.e., "{{ .Site.Title }}" in the original example-->
-  {{ .Title }} &ndash;
+  {{ .Title }} |
   {{ .Site.Title }}
 {{ end }}
 {{ define "main" }}
-  <h1>{{ .Title }}</h1>
-  {{ .Content }}
+  <div class="flex space-x-1 space-x-reverse">
+    <p>
+      <a href="/">{{ .Site.Title }}</a>
+      <span>></span>
+    </p>
+    {{ range .Site.Sections }}
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
+      <span>></span>
+    {{ end }}
+    <p>{{ .Page.Title }}</p>
+  </div>
+
+  <h1 class="text-6xl font-light">{{ .Title }}</h1>
+  <hr />
+
+  <main class="mb-12 pt-4 text-justify">
+    {{ .Content }}
+  </main>
 {{ end }}
