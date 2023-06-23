@@ -2,16 +2,38 @@
   {{ .Title }} |
   {{ .Site.Title }}
 {{ end }}
+
 {{ define "main" }}
+  {{ $base := .Site.BaseURL }}
+
   {{- partial "hierarchy.html" . -}}
 
 
-  <h1>Posts</h1>
-  {{ range .Pages }}
-    <article>
-      <h2>{{ .Title }}</h2>
-      {{ .Content }}
-    </article>
-  {{ end }}
+  <h2>{{ .Title }}</h2>
+  <hr />
+  <br />
 
+  <div
+    class="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6"
+  >
+    {{ range .Pages }}
+      {{ $title := .Title }}
+      <a href="{{ .Permalink }}" class="font-normal">
+        <div class="rounded border">
+          <div>
+            {{ with .Params.images }}
+              {{ $url := index (.) 0 }}
+              <img
+                class="h-28 w-full object-cover sm:h-40"
+                src="{{ $base }}{{ $url }}"
+                alt="{{ $title }}"
+              />
+            {{ end }}
+            <h5 class="text-center font-normal">{{ .Title }}</h5>
+          </div>
+        </div>
+      </a>
+    {{ end }}
+
+  </div>
 {{ end }}

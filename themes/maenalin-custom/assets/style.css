@@ -467,28 +467,28 @@ h4 {
 }
 
 h5 {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-  font-weight: 300;
-}
-
-@media (min-width: 640px) {
-  h5 {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-}
-
-h6 {
   font-size: 1.125rem;
   line-height: 1.75rem;
   font-weight: 300;
 }
 
 @media (min-width: 640px) {
-  h6 {
+  h5 {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+}
+
+h6 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 300;
+}
+
+@media (min-width: 640px) {
+  h6 {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 
@@ -669,12 +669,32 @@ hr {
   display: flex;
 }
 
+.grid {
+  display: grid;
+}
+
+.h-32 {
+  height: 8rem;
+}
+
+.h-28 {
+  height: 7rem;
+}
+
 .w-1\/2 {
   width: 50%;
 }
 
 .w-56 {
   width: 14rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .items-center {
@@ -689,10 +709,20 @@ hr {
   justify-content: space-between;
 }
 
+.gap-4 {
+  gap: 1rem;
+}
+
 .space-x-1 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.25rem * var(--tw-space-x-reverse));
   margin-left: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-y-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
 }
 
 .space-x-reverse > :not([hidden]) ~ :not([hidden]) {
@@ -736,6 +766,11 @@ hr {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .p-2 {
@@ -790,6 +825,10 @@ hr {
   font-weight: 500;
 }
 
+.font-normal {
+  font-weight: 400;
+}
+
 #TableOfContents > * > li {
   border-radius: 0.25rem;
 }
@@ -819,7 +858,31 @@ hr {
     margin-top: 0px;
   }
 
+  .sm\:h-48 {
+    height: 12rem;
+  }
+
+  .sm\:h-40 {
+    height: 10rem;
+  }
+
   .sm\:w-72 {
     width: 18rem;
+  }
+
+  .sm\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:grid-cols-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 }
