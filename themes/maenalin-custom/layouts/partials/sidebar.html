@@ -1,0 +1,51 @@
+{{ $title := .Page.Title }}
+{{ $base := .Site.BaseURL }}
+{{ $images := .Params.images }}
+
+{{ with .Params.sidebar }}
+  <aside
+    role="region"
+    class="border-primary/25 mx-auto mt-4 overflow-hidden rounded-sm border bg-white text-sm sm:float-left sm:mb-6 sm:mr-6 sm:mt-0 sm:w-72"
+  >
+    {{ with $images }}
+      {{ $url := index (.) 0 }}
+      <div class="flex items-center justify-center p-px">
+        <img src="{{ $base }}{{ $url }}" alt="{{ $title }}" />
+      </div>
+    {{ end }}
+
+
+    <p class="bg-primary/50 m-px rounded-sm text-center">
+      <strong>{{ $title }}</strong>
+    </p>
+
+    {{ range $key, $value := . }}
+      <p class="bg-primary/30 m-px rounded-sm text-center">
+        <strong>{{ $key }}</strong>
+      </p>
+      {{ with $value }}
+        <div class="divide-y">
+          {{ range $subkey, $subvalue := . }}
+            <div class="flex justify-between px-[3px] py-[5px]">
+              <p class="w-1/2">{{ $subkey }}</p>
+              {{ if eq (printf "%T" $subvalue) "[]interface {}" }}
+                {{/* list */}}
+                <p class="w-1/2">
+                  {{ range $item := $subvalue }}
+                    <span>{{ $item }}</span>
+                    <br />
+                  {{ end }}
+                </p>
+              {{ else if eq (printf "%T" $subvalue) "string" }}
+                {{/* string */}}
+                <p class="w-1/2"><span>{{ $subvalue }}</span><br /></p>
+              {{ else }}
+                {{/* object */}}
+              {{ end }}
+            </div>
+          {{ end }}
+        </div>
+      {{ end }}
+    {{ end }}
+  </aside>
+{{ end }}
