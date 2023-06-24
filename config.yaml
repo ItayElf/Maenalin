@@ -1,0 +1,34 @@
+baseURL: "https://itayelf.github.io/Maenalin/"
+languageCode: "he-il"
+languagedirection: rtl
+defaultContentLanguage: he
+title: "מנאלין"
+theme: "maenalin-custom"
+enableGitInfo: true
+
+markup:
+  tableOfContents:
+    startLevel: 3
+    endLevel: 3
+    ordered: false
+
+frontmatter:
+  date:
+    - date
+    - publishDate
+    - lastmod
+  expiryDate:
+    - expiryDate
+  lastmod:
+    - :git
+    - lastmod
+    - date
+    - publishDate
+  publishDate:
+    - publishDate
+    - date
+
+redirects:
+  - from: /**
+    status: 404
+    to: /404.html

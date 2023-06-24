@@ -1,0 +1,16 @@
+{{ define "title" }}
+  {{ .Title }} |
+  {{ .Site.Title }}
+{{ end }}
+{{ define "main" }}
+  {{- partial "hierarchy.html" . -}}
+
+
+  <h1 class="text-6xl font-light">{{ .Title }}</h1>
+  <hr />
+
+  {{- partial "sidebar.html" . -}}
+  <main class="mb-12 pt-4 text-justify">
+    {{ .Content }}
+  </main>
+{{ end }}
