@@ -4,10 +4,19 @@
       <h1 class="text-6xl font-light">{{ .Title }}</h1>
       <hr />
     </header>
+
+    <aside
+      role="region"
+      class="mx-auto mt-4 overflow-hidden rounded-sm border bg-white text-sm sm:float-left sm:mb-6 sm:mr-6 sm:mt-0 sm:w-96"
+    >
+      <a href="images/maenalin_big.webp"><img src="images/maenalin.webp" /></a>
+    </aside>
+
     <div>
       <!-- Note that the content for index.html, as a sort of list page, will pull from content/_index.md -->
       {{ .Content }}
     </div>
+    <hr />
     <div
       class="mt-4 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6"
     >
