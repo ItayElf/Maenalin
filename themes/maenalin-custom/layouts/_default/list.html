@@ -6,7 +6,7 @@
 {{ define "main" }}
   {{ $base := .Site.BaseURL }}
 
-  {{- partial "hierarchy.html" . -}}
+  {{- partial "breadcrumb.html" . -}}
 
 
   <h2>{{ .Title }}</h2>
