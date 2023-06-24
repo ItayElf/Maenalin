@@ -661,6 +661,18 @@ hr {
   margin-top: 1rem;
 }
 
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
 .block {
   display: block;
 }
@@ -787,6 +799,14 @@ hr {
 
 .pt-4 {
   padding-top: 1rem;
+}
+
+.pr-2 {
+  padding-right: 0.5rem;
+}
+
+.pr-4 {
+  padding-right: 1rem;
 }
 
 .text-center {
