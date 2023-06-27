@@ -3,6 +3,7 @@ title: "אוליסארי"
 date: 2023-06-23T17:02:44+03:00
 draft: false
 
+group: ""
 images: ["images/races/ulisary.jpg"]
 sidebar:
   מידע כללי:
