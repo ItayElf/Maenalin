@@ -10,7 +10,7 @@
     {{ with $images }}
       {{ $url := index (.) 0 }}
       <div class="flex items-center justify-center p-px">
-        <img src="{{ $base }}{{ $url }}" alt="{{ $title }}" />
+        <img src="{{ $base }}{{ $url }}" alt="{{ $title }}" class="w-full" />
       </div>
     {{ end }}
 
