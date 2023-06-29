@@ -12,6 +12,10 @@ markup:
     endLevel: 3
     ordered: false
 
+  goldmark:
+    renderer:
+      unsafe: true
+
 frontmatter:
   date:
     - date

@@ -454,15 +454,14 @@ h3 {
 }
 
 h4 {
-  font-size: 1.5rem;
-  line-height: 2rem;
-  font-weight: 300;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 @media (min-width: 640px) {
   h4 {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
@@ -673,6 +672,10 @@ hr {
   display: flex;
 }
 
+.table {
+  display: table;
+}
+
 .grid {
   display: grid;
 }
@@ -693,12 +696,12 @@ hr {
   width: 100%;
 }
 
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-.flex-col {
-  flex-direction: column;
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .items-center {
@@ -751,12 +754,41 @@ hr {
   border-radius: 0.125rem;
 }
 
+.rounded-t {
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+
 .border {
   border-width: 1px;
 }
 
 .border-primary\/25 {
   border-color: rgb(162 0 33 / 0.25);
+}
+
+.border-primary\/50 {
+  border-color: rgb(162 0 33 / 0.5);
+}
+
+.bg-\[\#42687c\]\/50 {
+  background-color: rgb(66 104 124 / 0.5);
+}
+
+.bg-\[\#603c14\]\/50 {
+  background-color: rgb(96 60 20 / 0.5);
+}
+
+.bg-\[\#b4f9a5\]\/50 {
+  background-color: rgb(180 249 165 / 0.5);
+}
+
+.bg-\[\#ffd700\]\/50 {
+  background-color: rgb(255 215 0 / 0.5);
+}
+
+.bg-primary\/20 {
+  background-color: rgb(162 0 33 / 0.2);
 }
 
 .bg-primary\/30 {
@@ -821,11 +853,6 @@ hr {
   line-height: 1.25rem;
 }
 
-.text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
 .font-light {
   font-weight: 300;
 }
@@ -875,6 +902,10 @@ hr {
     margin-top: 0px;
   }
 
+  .sm\:grid {
+    display: grid;
+  }
+
   .sm\:h-40 {
     height: 10rem;
   }
@@ -887,6 +918,10 @@ hr {
     width: 24rem;
   }
 
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .sm\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -897,6 +932,16 @@ hr {
   }
 }
 
+@media (min-width: 768px) {
+  .md\:grid {
+    display: grid;
+  }
+
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
 @media (min-width: 1024px) {
   .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -904,6 +949,14 @@ hr {
 }
 
 @media (min-width: 1280px) {
+  .xl\:grid {
+    display: grid;
+  }
+
+  .xl\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
   .xl\:grid-cols-6 {
     grid-template-columns: repeat(6, minmax(0, 1fr));
   }
