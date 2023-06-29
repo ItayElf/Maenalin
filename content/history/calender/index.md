@@ -12,6 +12,8 @@ sidebar: {}
 
 כל חודש בלוח השנה מסמל אחת מתשעת אלי מנאלין, כאשר החודש הנוסף כל חמש שנים מסמל את קאסיר, הנחשב לאבי האלים. שמות תשעת החודשים הם: [**מולג**](../../history/calender/molg) ([מולגזארד](../../deities/molgazard)), [**פאש**](../../history/calender/phash) ([פאשטאר](../../deities/phashtar)), [**טין**](../../history/calender/tin) ([טינאסי](../../deities/tinasi)), [**אן**](../../history/calender/an) ([אנהרן](../../deities/anhern)), [**מיר**](../../history/calender/mir) ([מירגאט](../../deities/mirgat)), [**קאר**](../../history/calender/kar) ([קארמוס](../../deities/karmos)), [**אסר**](https://maenalin.netlify.app/%D7%9C%D7%95%D7%97-%D7%A9%D7%A0%D7%94/%D7%90%D7%A1%D7%A8/) (אסרוס), [**האט**](../../history/calender/hat) ([האטרה](../../deities/hatera)) ו[**נאם**](../../history/calender/nam) ([נאמברה](../../deities/nambre)). החודש הנוסף כל חמש שנים נקרא [**קאס**](../../history/calender/kas) ([קאסיר](../../deities/kasir)). ימי השבוע בלוח השנה של הנמצא בשימוש במנאלין נקראים על פי מספרם (היום הראשון בשבוע נקרא “יום ראשון”, השביעי נקרא “יום שביעי” וכך הלאה).
 
+&nbsp;
+
 הספירה במנאלין מתחילה בשנת 0, שהיא השנה בה נחרבה אטילארה-אסארי.
 
 {{< table_of_contents >}}
@@ -63,11 +65,12 @@ sidebar: {}
 &nbsp;
 
 #### שנה 2
+
 **חורף**: (ממשיך משנה קודמת) ה1 במולג עד ה7 בטין, **אביב**: ה8 בטין עד ה7 במיר, **קיץ**: ה8 במיר עד ה30 באסר, **סתיו**: ה31 באסר עד ה28 בנאם, **חורף**: ה29 בנאם עד ה37 בנאם (ממשיך לשנה הבאה).
 
 ---
-&nbsp;
 
+&nbsp;
 
 <div class="grid grid-cols-1 sm:grid sm:grid-cols-2 md:grid md:grid-cols-3 xl:grid xl:grid-cols-4 gap-4">
 
@@ -94,9 +97,11 @@ sidebar: {}
 &nbsp;
 
 #### שנה 3
+
 **חורף**: (ממשיך משנה קודמת) ה1 במולג עד ה16 בטין, אביב: **ה17** בטין עד ה15 במיר, **קיץ**: ה16 במיר עד ה2 בהאט, **סתיו**: ה3 בהאט עד ה36 בנאם.
 
 ---
+
 &nbsp;
 
 <div class="grid grid-cols-1 sm:grid sm:grid-cols-2 md:grid md:grid-cols-3 xl:grid xl:grid-cols-4 gap-4">
@@ -124,9 +129,11 @@ sidebar: {}
 &nbsp;
 
 #### שנה 4
+
 **חורף**: ה1 במולג עד ה23 בטין, **אביב**: ה24 בטין עד ה23 במיר, **קיץ**: ה24 במיר עד ה10 בהאט, **סתיו**: ה11 בהאט עד ה37 בנאם.
 
 ---
+
 &nbsp;
 
 <div class="grid grid-cols-1 sm:grid sm:grid-cols-2 md:grid md:grid-cols-3 xl:grid xl:grid-cols-4 gap-4">
@@ -158,6 +165,7 @@ sidebar: {}
 **סתיו:** (ממשיך משנה קודמת) ה1 במולג עד ה7 במולג. **חורף:** ה8 במולג עד ה30 בטין, **אביב:** ה31 בטין עד ה30 במיר, **קיץ:** ה31 במיר עד ה17 בהאט, **סתיו:** ה18 בהאט עד ה16 בקאס, **חורף:** ה17 בקאס עד ה36 בקאס (ממשיך לשנה הבאה).
 
 ---
+
 &nbsp;
 
 <div class="grid grid-cols-1 sm:grid sm:grid-cols-2 md:grid md:grid-cols-3 xl:grid xl:grid-cols-4 gap-4">
@@ -191,6 +199,7 @@ sidebar: {}
 **חורף:** (ממשיך משנה קודמת) ה1 במולג עד ה3 בטין, **אביב:** ה4 בטין עד ה2 במיר, **קיץ:** ה3 במיר עד ה25 באסר, **סתיו:** ה26 באסר עד ה23 בנאם, **חורף:** ה24 בנאם עד ה37 בנאם (ממשיך לשנה הבאה).
 
 ---
+
 &nbsp;
 
 <div class="grid grid-cols-1 sm:grid sm:grid-cols-2 md:grid md:grid-cols-3 xl:grid xl:grid-cols-4 gap-4">
@@ -222,6 +231,7 @@ sidebar: {}
 **חורף:** (ממשיך משנה קודמת) ה1 במולג עד ה9 בטין, **אביב:** ה10 בטין עד ה9 במיר, **קיץ:** ה10 במיר עד ה32 באסר, **סתיו:** ה33 באסר עד ה30 בנאם, **חורף:** ה31 בנאם עד ה36 בנאם (ממשיך לשנה הבאה).
 
 ---
+
 &nbsp;
 
 <div class="grid grid-cols-1 sm:grid sm:grid-cols-2 md:grid md:grid-cols-3 xl:grid xl:grid-cols-4 gap-4">
@@ -253,6 +263,7 @@ sidebar: {}
 **חורף:** (ממשיך משנה קודמת) ה1 במולג עד ה17 בטין, **אביב:** ה18 בטין עד ה16 במיר, **קיץ:** ה17 במיר עד ה3 בהאט, **סתיו:** ה4 בהאט עד ה37 בנאם.
 
 ---
+
 &nbsp;
 
 <div class="grid grid-cols-1 sm:grid sm:grid-cols-2 md:grid md:grid-cols-3 xl:grid xl:grid-cols-4 gap-4">
@@ -280,9 +291,11 @@ sidebar: {}
 &nbsp;
 
 #### שנה 9
+
 **חורף:** ה1 במולג עד ה23 בטין, **אביב:** ה24 בטין עד ה23 במיר, **קיץ:** ה24 במיר עד ה10 בהאט, **סתיו:** ה11 בהאט עד ה36 בנאם (ממשיך לשנה הבאה).
 
 ---
+
 &nbsp;
 
 <div class="grid grid-cols-1 sm:grid sm:grid-cols-2 md:grid md:grid-cols-3 xl:grid xl:grid-cols-4 gap-4">
@@ -310,9 +323,11 @@ sidebar: {}
 &nbsp;
 
 #### שנה 10
+
 **סתיו:** (ממשיך משנה קודמת) ה1 במולג עד ה8 במולג, **חורף:** ה9 במולג עד ה31 בטין, **אביב:** ה32 בטין עד ה31 במיר, **קיץ:** ה32 במיר עד ה18 בהאט, **סתיו:** ה19 בהאט עד ה14 בקאס, **חורף:** ה15 בקאס עד ה36 בקאס (ממשיך לשנה הבאה).
 
 ---
+
 &nbsp;
 
 <div class="grid grid-cols-1 sm:grid sm:grid-cols-2 md:grid md:grid-cols-3 xl:grid xl:grid-cols-4 gap-4">
@@ -338,4 +353,3 @@ sidebar: {}
 <table class="border rounded border-primary/50"><caption class="border font-medium border-primary/50 bg-primary/20 rounded-t">קאס</caption><thead class="border border-primary/50"><tr><th>רא</th><th>שנ</th><th>של</th><th>רב</th><th>חמ</th><th>שי</th><th>שב</th><th>שמ</th><th>תש</th></tr></thead><tbody><tr><td class="bg-[#603c14]/50">1</td><td class="bg-[#603c14]/50">2</td><td class="bg-[#603c14]/50">3</td><td class="bg-[#603c14]/50">4</td><td class="bg-[#603c14]/50">5</td><td class="bg-[#603c14]/50">6</td><td class="bg-[#603c14]/50">7</td><td class="bg-[#603c14]/50">8</td><td class="bg-[#603c14]/50">9</td></tr><tr><td class="bg-[#603c14]/50">10</td><td class="bg-[#603c14]/50">11</td><td class="bg-[#603c14]/50">12</td><td class="bg-[#603c14]/50">13</td><td class="bg-[#603c14]/50">14</td><td class="bg-[#42687c]/50">15</td><td class="bg-[#42687c]/50">16</td><td class="bg-[#42687c]/50">17</td><td class="bg-[#42687c]/50">18</td></tr><tr><td class="bg-[#42687c]/50">19</td><td class="bg-[#42687c]/50">20</td><td class="bg-[#42687c]/50">21</td><td class="bg-[#42687c]/50">22</td><td class="bg-[#42687c]/50">23</td><td class="bg-[#42687c]/50">24</td><td class="bg-[#42687c]/50">25</td><td class="bg-[#42687c]/50">26</td><td class="bg-[#42687c]/50">27</td></tr><tr><td class="bg-[#42687c]/50">28</td><td class="bg-[#42687c]/50">29</td><td class="bg-[#42687c]/50">30</td><td class="bg-[#42687c]/50">31</td><td class="bg-[#42687c]/50">32</td><td class="bg-[#42687c]/50">33</td><td class="bg-[#42687c]/50">34</td><td class="bg-[#42687c]/50">35</td><td class="bg-[#42687c]/50">36</td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table>
 
 </div>
-
