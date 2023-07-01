@@ -7,7 +7,9 @@ var bounds = [
   [0, 0],
   [3584, 4864],
 ];
-var image = L.imageOverlay("images/maenalin_background.png", bounds).addTo(map);
+var image = L.imageOverlay("images/map/maenalin_background.png", bounds).addTo(
+  map
+);
 
 map.fitBounds(bounds);
 map.setMaxBounds(map.getBounds());
