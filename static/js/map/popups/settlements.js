@@ -5,6 +5,14 @@ const TOWN = "town";
 const VILLAGE = "village";
 const HAMLET = "hamlet";
 
+const COLORS = {};
+COLORS[CAPITAL] = "#AC2020";
+COLORS[METROPOLIS] = "";
+COLORS[CITY] = "";
+COLORS[TOWN] = "";
+COLORS[VILLAGE] = "";
+COLORS[HAMLET] = "";
+
 const settlements = [
   {
     position: [2046, 3972],
@@ -21,7 +29,15 @@ const settlements = [
 const markers = settlements.map((s) => {
   return {
     type: s.type,
-    marker: L.marker(s.position).bindPopup(s.description),
+    marker: new L.Circle(s.position, {
+      stroke: true,
+      weight: 2,
+      color: "black",
+      fillColor: COLORS[s.type],
+      fillOpacity: 1,
+      fill: true,
+      radius: 12,
+    }).bindPopup(s.description),
   };
 });
 
