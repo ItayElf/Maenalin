@@ -5,14 +5,6 @@ const TOWN = "town";
 const VILLAGE = "village";
 const HAMLET = "hamlet";
 
-const COLORS = {};
-COLORS[CAPITAL] = "#AC2020";
-COLORS[METROPOLIS] = "";
-COLORS[CITY] = "";
-COLORS[TOWN] = "";
-COLORS[VILLAGE] = "";
-COLORS[HAMLET] = "";
-
 const settlements = [
   {
     position: [2046, 3972],
@@ -26,6 +18,24 @@ const settlements = [
   },
 ];
 
+const getColor = (settlement) => {
+  switch (settlement.type) {
+    case CAPITAL:
+      return "#AC2020";
+    default:
+      return "";
+  }
+};
+
+const getRadius = (settlements) => {
+  switch (settlements.type) {
+    case CAPITAL:
+      return 12;
+    default:
+      return 10;
+  }
+};
+
 const markers = settlements.map((s) => {
   return {
     type: s.type,
@@ -33,10 +43,10 @@ const markers = settlements.map((s) => {
       stroke: true,
       weight: 2,
       color: "black",
-      fillColor: COLORS[s.type],
+      fillColor: getColor(s),
       fillOpacity: 1,
       fill: true,
-      radius: 12,
+      radius: getRadius(s),
     }).bindPopup(s.description),
   };
 });
