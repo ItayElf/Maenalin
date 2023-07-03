@@ -2,6 +2,9 @@ import {
   getSettlementsDefaultOverlays,
   getSettlementOptionalOverlays,
 } from "./popups/settlements.js";
+import { getLandscapeLayers } from "./regions/landscapes.js";
+
+const defaultLayer = L.geoJSON();
 
 const getDefaultOverlays = () => {
   return { ...getSettlementsDefaultOverlays() };
@@ -11,11 +14,15 @@ const getOptionalOverlays = () => {
   return { ...getSettlementOptionalOverlays() };
 };
 
+const getLayers = () => {
+  return { Empty: defaultLayer, ...getLandscapeLayers() };
+};
+
 const setupMap = (overlays) => {
   const map = L.map("map", {
     crs: L.CRS.Simple,
     minZoom: -2,
-    layers: [...overlays],
+    layers: [defaultLayer, ...overlays],
   });
 
   const bounds = [
@@ -33,4 +40,4 @@ const setupMap = (overlays) => {
 let overlays = getDefaultOverlays();
 const map = setupMap(Object.values(overlays));
 overlays = { ...overlays, ...getOptionalOverlays() };
-L.control.layers(null, overlays).addTo(map);
+L.control.layers(getLayers(), overlays).addTo(map);
