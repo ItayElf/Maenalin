@@ -13,32 +13,36 @@
   <hr />
   <br />
 
-  {{ range .Pages.GroupByParam  "group" }}
-    {{ if ne .Key "" }}
-      <h3 class="mt-6">{{ .Key }}</h3>
-      <hr />
+  <div class="space-y-4">
+    {{ range .Pages.GroupByParam  "group" }}
+      <div>
+        {{ if ne .Key "" }}
+          <h3>{{ .Key }}</h3>
+          <hr />
+        {{ end }}
+        <div
+          class="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6"
+        >
+          {{ range (sort .Pages "Title") }}
+            {{ $title := .Title }}
+            <a href="{{ .Permalink }}" class="font-normal">
+              <div class="rounded border">
+                <div>
+                  {{ with .Params.images }}
+                    {{ $url := index (.) 0 }}
+                    <img
+                      class="h-28 w-full object-cover sm:h-40"
+                      src="{{ $base }}{{ $url }}"
+                      alt="{{ $title }}"
+                    />
+                  {{ end }}
+                  <h5 class="text-center font-normal">{{ .Title }}</h5>
+                </div>
+              </div>
+            </a>
+          {{ end }}
+        </div>
+      </div>
     {{ end }}
-    <div
-      class="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6"
-    >
-      {{ range (sort .Pages "Title") }}
-        {{ $title := .Title }}
-        <a href="{{ .Permalink }}" class="font-normal">
-          <div class="rounded border">
-            <div>
-              {{ with .Params.images }}
-                {{ $url := index (.) 0 }}
-                <img
-                  class="h-28 w-full object-cover sm:h-40"
-                  src="{{ $base }}{{ $url }}"
-                  alt="{{ $title }}"
-                />
-              {{ end }}
-              <h5 class="text-center font-normal">{{ .Title }}</h5>
-            </div>
-          </div>
-        </a>
-      {{ end }}
-    </div>
-  {{ end }}
+  </div>
 {{ end }}

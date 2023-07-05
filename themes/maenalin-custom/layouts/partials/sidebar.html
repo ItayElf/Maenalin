@@ -10,7 +10,7 @@
     {{ with $images }}
       {{ $url := index (.) 0 }}
       <div class="flex items-center justify-center p-px">
-        <img src="{{ $base }}{{ $url }}" alt="{{ $title }}" />
+        <img src="{{ $base }}{{ $url }}" alt="{{ $title }}" class="w-full" />
       </div>
     {{ end }}
 
@@ -41,6 +41,12 @@
                 <p class="w-1/2"><span>{{ $subvalue }}</span><br /></p>
               {{ else }}
                 {{/* object */}}
+                <div class="w-1/2">
+                  {{ range $name, $url := $subvalue }}
+                    <a href="{{ $url }}" class="font-medium">{{ $name }}</a
+                    ><br />
+                  {{ end }}
+                </div>
               {{ end }}
             </div>
           {{ end }}

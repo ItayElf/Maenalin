@@ -1,0 +1,54 @@
+{{ define "title" }}
+  {{ .Title }} |
+  {{ .Site.Title }}
+{{ end }}
+
+{{ define "main" }}
+
+  {{- $letters := split "אבגדהוזחטיכלמנסעפצקרשת" "" -}}
+  {{- $pages := .Site.Pages.ByTitle -}}
+  {{- $pages_by_letters := dict -}}
+  {{- range $pages -}}
+    {{- $page := . -}}
+    {{- $first_letter := upper ( substr $page.Name 0 1 ) -}}
+    {{- if not (in $letters $first_letter) }}
+      {{ continue }}
+    {{ end }}
+    {{- $new_list := slice -}}
+    {{ with index $pages_by_letters $first_letter }}
+      {{- $new_list = . | append $page -}}
+    {{ else }}
+      {{- $new_list = slice $page -}}
+    {{ end }}
+    {{- $pages_by_letters = merge $pages_by_letters (dict $first_letter $new_list) -}}
+  {{ end }}
+
+   {{- partial "breadcrumb.html" . -}}
+
+  <h1 class="text-6xl font-light">{{ .Title }}</h1>
+  <hr />
+
+  <main class="mb-12 pt-4 text-justify">
+    {{ .Content }}
+
+    <div class="grid grid-cols-1 gap-4 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6">
+      
+      {{ range $letter, $pages := $pages_by_letters }}
+        <div>
+
+          <h3>{{ $letter }}</h3>
+          <hr />
+          
+          <ul>
+            {{ range $pages }}
+          <li class="text-xl">
+            &bull; <a href="{{ .Permalink }}">{{ .Title }}</a>
+          </li>
+          {{ end }}
+        </ul>
+        <br/>
+      </div>
+        {{ end }}
+    </main>
+  </div>
+{{ end }}
