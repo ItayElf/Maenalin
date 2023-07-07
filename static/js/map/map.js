@@ -2,7 +2,7 @@ import {
   getSettlementsDefaultOverlays,
   getSettlementOptionalOverlays,
 } from "./popups/settlements.js";
-import { getLandscapeLayers } from "./regions/landscapes.js";
+import { getLandscapeLayers } from "./regions/landscapes/landscapes.js";
 
 const defaultLayer = L.geoJSON();
 
@@ -24,6 +24,8 @@ const setupMap = (overlays) => {
     minZoom: -2,
     layers: [defaultLayer, ...overlays],
   });
+  map.createPane("popups");
+  map.getPane("popups").style.zIndex = 1000;
 
   const bounds = [
     [0, 0],

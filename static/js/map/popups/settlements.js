@@ -47,6 +47,7 @@ const markers = settlements.map((s) => {
       fillOpacity: 1,
       fill: true,
       radius: getRadius(s),
+      pane: "popups",
     }).bindPopup(s.description),
   };
 });
