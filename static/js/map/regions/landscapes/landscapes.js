@@ -1,7 +1,10 @@
 import LANDSCAPES, {
   DESERT,
   FOREST,
+  LUSH,
+  MOUNTAINS,
   PLAINS,
+  STEPPE,
   SWAMP,
 } from "./landscapes_data.js";
 
@@ -12,7 +15,9 @@ const onEachFeature = (feature, layer) => {
     layer.bindTooltip(feature.properties.title, {
       permanent: true,
       direction: "center",
-      className: `leaflet-tooltip ${feature.properties.type}`,
+      className: `leaflet-tooltip ${getColor(
+        feature.properties.type
+      )?.color?.replace("#", "a")}`,
     });
   }
 
@@ -31,6 +36,12 @@ const getColor = (type) => {
       return { color: "purple" };
     case FOREST:
       return { color: "green" };
+    case MOUNTAINS:
+      return { color: "brown" };
+    case STEPPE:
+      return { color: "#c7be60 " };
+    case LUSH:
+      return { color: "#00ff33" };
     default:
       return {};
   }
