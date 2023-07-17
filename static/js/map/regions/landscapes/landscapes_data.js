@@ -5021,7 +5021,7 @@ const LANDSCAPES = [
   {
     type: "Feature",
     properties: {
-      type: FOREST,
+      type: PLAINS,
       title: "חורשת קירהי",
       popupContent: "<b>חורשת קירהי</b>",
     },
