@@ -25,7 +25,9 @@ const setupMap = (overlays) => {
     layers: [defaultLayer, ...overlays],
   });
   map.createPane("popups");
+  map.createPane("top");
   map.getPane("popups").style.zIndex = 1000;
+  map.getPane("top").style.zIndex = 2000;
 
   const bounds = [
     [0, 0],

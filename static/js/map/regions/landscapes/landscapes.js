@@ -22,7 +22,10 @@ const onEachFeature = (feature, layer) => {
   }
 
   if (feature.properties.popupContent) {
-    layer.bindPopup(feature.properties.popupContent);
+    const popup = L.popup({ pane: "top" }).setContent(
+      feature.properties.popupContent
+    );
+    layer.bindPopup(popup);
   }
 };
 

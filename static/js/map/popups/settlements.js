@@ -16,12 +16,24 @@ const settlements = [
     description: "<b>אגמור</b>",
     type: CAPITAL,
   },
+  {
+    position: [1367, 1798],
+    description: "<b>מצר</b>",
+    type: CAPITAL,
+  },
+  {
+    position: [1465, 1886],
+    description: "<b>מירין</b>",
+    type: CITY,
+  },
 ];
 
 const getColor = (settlement) => {
   switch (settlement.type) {
     case CAPITAL:
       return "#AC2020";
+    case CITY:
+      return "yellow";
     default:
       return "";
   }
@@ -37,6 +49,7 @@ const getRadius = (settlements) => {
 };
 
 const markers = settlements.map((s) => {
+  const popup = L.popup({ pane: "top" }).setContent(s.description);
   return {
     type: s.type,
     marker: new L.Circle(s.position, {
@@ -48,7 +61,7 @@ const markers = settlements.map((s) => {
       fill: true,
       radius: getRadius(s),
       pane: "popups",
-    }).bindPopup(s.description),
+    }).bindPopup(popup),
   };
 });
 
