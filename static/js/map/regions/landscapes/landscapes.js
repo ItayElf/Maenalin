@@ -6,6 +6,7 @@ import LANDSCAPES, {
   PLAINS,
   STEPPE,
   SWAMP,
+  HILLS,
 } from "./landscapes_data.js";
 
 const onEachFeature = (feature, layer) => {
@@ -45,6 +46,8 @@ const getColor = (type) => {
       return { color: "#c7be60 " };
     case LUSH:
       return { color: "#00ff33" };
+    case HILLS:
+      return { color: "#291a1a" };
     default:
       return {};
   }
