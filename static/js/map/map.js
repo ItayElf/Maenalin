@@ -3,6 +3,7 @@ import {
   getSettlementOptionalOverlays,
 } from "./popups/settlements.js";
 import { getLandscapeLayers } from "./regions/landscapes/landscapes.js";
+import { setTooltipOnZoom } from "./view/fixOnZoom.js";
 
 const defaultLayer = L.geoJSON();
 
@@ -34,6 +35,8 @@ const setupMap = (overlays) => {
     [3584, 4864],
   ];
   L.imageOverlay("images/map/maenalin_background.png", bounds).addTo(map);
+
+  map.on("zoomend", () => setTooltipOnZoom(map));
 
   map.fitBounds(bounds);
   map.setMaxBounds(map.getBounds());
