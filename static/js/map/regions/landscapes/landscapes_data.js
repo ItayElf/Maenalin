@@ -5023,8 +5023,8 @@ const LANDSCAPES = [
     type: "Feature",
     properties: {
       type: PLAINS,
-      title: "חורשת קירהי",
-      popupContent: "<b>חורשת קירהי</b>",
+      title: "חורשת דאנזביט",
+      popupContent: "<b>חורשת דאנזביט</b>",
     },
     geometry: {
       type: "Polygon",

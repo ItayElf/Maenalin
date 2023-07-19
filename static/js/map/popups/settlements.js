@@ -22,6 +22,61 @@ const settlements = [
     type: CAPITAL,
   },
   {
+    position: [2870, 2382],
+    description: "<b>כרמיל</b>",
+    type: CAPITAL,
+  },
+  {
+    position: [2944, 2368],
+    description: "<b>ארגמן</b>",
+    type: CAPITAL,
+  },
+  {
+    position: [2978, 2551],
+    description: "<b>מגניון</b>",
+    type: CAPITAL,
+  },
+  {
+    position: [2916, 2541],
+    description: "<b>קלמין</b>",
+    type: CAPITAL,
+  },
+  {
+    position: [2831, 2540],
+    description: "<b>ציאן</b>",
+    type: CAPITAL,
+  },
+  {
+    position: [2773, 2431],
+    description: "<b>פארור</b>",
+    type: CAPITAL,
+  },
+  {
+    position: [2700, 2432],
+    description: "<b>זרניך</b>",
+    type: CAPITAL,
+  },
+  {
+    position: [2766, 2390],
+    description: "<b>פירול</b>",
+    type: CAPITAL,
+  },
+  {
+    position: [2804, 2258],
+    description: "<b>אוראולין</b>",
+    type: CAPITAL,
+  },
+  {
+    position: [2845, 2207],
+    description: "<b>אומברה</b>",
+    type: CAPITAL,
+  },
+  {
+    position: [2931, 2240],
+    description: "<b>ניל</b>",
+    type: CAPITAL,
+  },
+  {
     position: [1465, 1886],
     description: "<b>מירין</b>",
     type: CITY,
@@ -42,9 +97,9 @@ const getColor = (settlement) => {
 const getRadius = (settlements) => {
   switch (settlements.type) {
     case CAPITAL:
-      return 12;
+      return 8;
     default:
-      return 10;
+      return 6;
   }
 };
 
