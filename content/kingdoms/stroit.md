@@ -4,7 +4,7 @@ date: 2023-07-17T18:33:24+03:00
 draft: false
 
 group: ""
-images: ["images/kingdoms/metzer.svg"]
+images: ["images/kingdoms/stroit.svg"]
 sidebar:
   היסטוריה:
     הקמה: 1879 לפנה"ח
