@@ -61,6 +61,6 @@ const layer = L.geoJSON(LANDSCAPES, { style, onEachFeature });
 
 export const getLandscapeLayers = () => {
   return {
-    Landscapes: layer,
+    איזורים: layer,
   };
 };

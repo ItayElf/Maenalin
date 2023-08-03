@@ -132,15 +132,15 @@ const smallSettlements = getLayerGroup(markers, (m) =>
 
 const getSettlementsDefaultOverlays = () => {
   return {
-    Capitals: capitals,
-    Metropolises: metropolises,
-    Cities: cities,
+    "ערי בירה": capitals,
+    מטרופולינים: metropolises,
+    ערים: cities,
   };
 };
 
 const getSettlementOptionalOverlays = () => {
   return {
-    "Smaller Settlements": smallSettlements,
+    "ישובים קטנים": smallSettlements,
   };
 };
 

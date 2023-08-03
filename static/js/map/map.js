@@ -16,7 +16,7 @@ const getOptionalOverlays = () => {
 };
 
 const getLayers = () => {
-  return { Empty: defaultLayer, ...getLandscapeLayers() };
+  return { רגיל: defaultLayer, ...getLandscapeLayers() };
 };
 
 const setupMap = (overlays) => {
