@@ -19,6 +19,22 @@ const getLayers = () => {
   return { רגיל: defaultLayer, ...getLandscapeLayers() };
 };
 
+const setupMeasure = () => {
+  L.Measure = {
+    linearMeasurement: "מרחק",
+    areaMeasurement: "שטח",
+    start: "התחלה",
+    meter: "מטרים",
+    meterDecimals: 0,
+    kilometer: 'ק"מ',
+    kilometerDecimals: 2,
+    squareMeter: "מטרים רבועים",
+    squareMeterDecimals: 0,
+    squareKilometers: 'קמ"ר',
+    squareKilometersDecimals: 2,
+  };
+};
+
 const setupMap = (overlays) => {
   const map = L.map("map", {
     crs: L.CRS.Simple,
@@ -29,6 +45,14 @@ const setupMap = (overlays) => {
   map.createPane("top");
   map.getPane("popups").style.zIndex = 1000;
   map.getPane("top").style.zIndex = 2000;
+
+  setupMeasure();
+  L.control
+    .measure({
+      title: "מרחק",
+      linearMeasurement: "מרחק",
+    })
+    .addTo(map);
 
   const bounds = [
     [0, 0],
