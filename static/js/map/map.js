@@ -58,7 +58,7 @@ const setupMap = (overlays) => {
     [0, 0],
     [3584, 4864],
   ];
-  L.imageOverlay("images/map/maenalin_background.png", bounds).addTo(map);
+  L.imageOverlay("images/map/maenalin_background.webp", bounds).addTo(map);
 
   map.on("zoomend", () => setTooltipOnZoom(map));
 
