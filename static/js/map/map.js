@@ -5,6 +5,12 @@ import {
 import { getLandscapeLayers } from "./regions/landscapes/landscapes.js";
 import { setTooltipOnZoom } from "./view/fixOnZoom.js";
 
+function isMobile() {
+  if (/android|iphone|ipad|ipod|mobi|mini|tablet/i.test(navigator.userAgent))
+    return true;
+  else return false;
+}
+
 const defaultLayer = L.geoJSON();
 
 const getDefaultOverlays = () => {
@@ -63,8 +69,8 @@ const setupMap = (overlays) => {
   map.on("zoomend", () => setTooltipOnZoom(map));
 
   map.fitBounds(bounds);
-  map.setMaxBounds(map.getBounds());
   map.setZoom(-1);
+  !isMobile() && map.setMaxBounds(map.getBounds());
   return map;
 };
 
