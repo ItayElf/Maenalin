@@ -81,6 +81,12 @@ const settlements = [
     description: "<b>מירין</b>",
     type: CITY,
   },
+  {
+    position: [2440, 3895],
+    description:
+      '<b><a href="../Maenalin/settlements/snavertygg">סנאברטיג</a></b>',
+    type: CITY,
+  },
 ];
 
 const getColor = (settlement) => {
