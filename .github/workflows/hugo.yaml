@@ -57,6 +57,14 @@ jobs:
           hugo \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
+      - name: Setup npm
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - name: Install pagefind
+        run: npm install pagefind@1.0.3
+      - name: Index with pagefind
+        run: npx pagefind --site ./public
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
