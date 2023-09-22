@@ -630,6 +630,10 @@ hr {
   }
 }
 
+.invisible {
+  visibility: hidden;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -674,6 +678,10 @@ hr {
 
 .mr-2 {
   margin-right: 0.5rem;
+}
+
+.mr-16 {
+  margin-right: 4rem;
 }
 
 .block {
@@ -722,6 +730,14 @@ hr {
 
 .w-8 {
   width: 2rem;
+}
+
+.w-96 {
+  width: 24rem;
+}
+
+.max-w-xl {
+  max-width: 36rem;
 }
 
 .grid-cols-1 {
@@ -939,6 +955,10 @@ hr {
 }
 
 @media (min-width: 640px) {
+  .sm\:visible {
+    visibility: visible;
+  }
+
   .sm\:float-left {
     float: left;
   }
@@ -969,6 +989,10 @@ hr {
 
   .sm\:w-96 {
     width: 24rem;
+  }
+
+  .sm\:max-w-none {
+    max-width: none;
   }
 
   .sm\:grid-cols-2 {
