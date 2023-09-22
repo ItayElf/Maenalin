@@ -1,0 +1,30 @@
+:root {
+  --pagefind-ui-font: ui-sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji" !important;
+  --pagefind-ui-scale: 0.6 !important;
+}
+*:focus-within {
+  outline: none !important;
+}
+.pagefind-ui__drawer {
+  background-color: white !important;
+  border-radius: 8px;
+}
+.pagefind-ui__search-input {
+  background-color: transparent !important;
+  color: white !important;
+  border: none !important;
+}
+.pagefind-ui__form::before {
+  background-color: white !important;
+  opacity: 1 !important;
+}
+.pagefind-ui__search-clear {
+  display: none !important;
+}
+.pagefind-ui__message {
+  direction: ltr;
+  margin-left: 5px;
+}
