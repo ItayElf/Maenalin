@@ -9,14 +9,16 @@
       new PagefindUI({ element: "#search", showSubResults: true });
     });
   </script>
-  {{- partial "breadcrumb.html" . -}}
+  <div data-pagefind-body>
+    {{- partial "breadcrumb.html" . -}}
 
 
-  <h1 data-pagefind-meta="title" class="text-6xl font-light">{{ .Title }}</h1>
-  <hr />
+    <h1 data-pagefind-meta="title" class="text-6xl font-light">{{ .Title }}</h1>
+    <hr />
 
-  {{- partial "sidebar.html" . -}}
-  <main data-pagefind-body class="mb-12 pt-4 text-justify">
-    {{ .Content }}
-  </main>
+    {{- partial "sidebar.html" . -}}
+    <main class="mb-12 pt-4 text-justify">
+      {{ .Content }}
+    </main>
+  </div>
 {{ end }}
