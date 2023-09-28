@@ -1,6 +1,7 @@
 {{ $title := .Page.Title }}
 {{ $base := .Site.BaseURL }}
 {{ $images := .Params.images }}
+{{ $params := .Params }}
 
 {{ with .Params.sidebar }}
   <aside
@@ -14,6 +15,9 @@
           ><img src="{{ $base }}{{ $url }}" alt="{{ $title }}" class="w-full"
         /></a>
       </div>
+      {{ if isset $params "underline" }}
+        <p class="text-center italic">{{ $params.underline }}</p>
+      {{ end }}
     {{ end }}
 
 
