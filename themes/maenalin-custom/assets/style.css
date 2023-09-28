@@ -496,6 +496,17 @@ hr {
   margin-bottom: 0.5rem;
 }
 
+blockquote {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-right-width: 4px;
+  --tw-border-opacity: 1;
+  border-color: rgb(209 213 219 / var(--tw-border-opacity));
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-style: italic;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -628,6 +639,10 @@ hr {
   .container {
     max-width: 1536px;
   }
+}
+
+.invisible {
+  visibility: hidden;
 }
 
 .z-10 {
@@ -926,6 +941,10 @@ hr {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.underline {
+  text-decoration-line: underline;
+}
+
 #TableOfContents > * > li {
   border-radius: 0.25rem;
 }
@@ -939,6 +958,10 @@ hr {
 }
 
 @media (min-width: 640px) {
+  .sm\:visible {
+    visibility: visible;
+  }
+
   .sm\:float-left {
     float: left;
   }
