@@ -24,6 +24,9 @@
   hr {
     @apply my-2;
   }
+  blockquote {
+    @apply my-4 border-r-4 border-gray-300 px-4 italic;
+  }
 }
 
 @layer utilities {

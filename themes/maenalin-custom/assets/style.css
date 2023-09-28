@@ -496,6 +496,17 @@ hr {
   margin-bottom: 0.5rem;
 }
 
+blockquote {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-right-width: 4px;
+  --tw-border-opacity: 1;
+  border-color: rgb(209 213 219 / var(--tw-border-opacity));
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-style: italic;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -660,6 +671,10 @@ hr {
   margin-bottom: 0.5rem;
 }
 
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
 .mr-4 {
   margin-right: 1rem;
 }
@@ -674,14 +689,6 @@ hr {
 
 .mt-4 {
   margin-top: 1rem;
-}
-
-.mr-2 {
-  margin-right: 0.5rem;
-}
-
-.mr-16 {
-  margin-right: 4rem;
 }
 
 .block {
@@ -700,12 +707,12 @@ hr {
   display: grid;
 }
 
-.h-28 {
-  height: 7rem;
-}
-
 .h-12 {
   height: 3rem;
+}
+
+.h-28 {
+  height: 7rem;
 }
 
 .h-8 {
@@ -724,20 +731,12 @@ hr {
   width: 14rem;
 }
 
-.w-full {
-  width: 100%;
-}
-
 .w-8 {
   width: 2rem;
 }
 
-.w-96 {
-  width: 24rem;
-}
-
-.max-w-xl {
-  max-width: 36rem;
+.w-full {
+  width: 100%;
 }
 
 .grid-cols-1 {
@@ -831,6 +830,11 @@ hr {
   background-color: rgb(255 215 0 / 0.5);
 }
 
+.bg-primary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(162 0 33 / var(--tw-bg-opacity));
+}
+
 .bg-primary\/20 {
   background-color: rgb(162 0 33 / 0.2);
 }
@@ -846,11 +850,6 @@ hr {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-primary {
-  --tw-bg-opacity: 1;
-  background-color: rgb(162 0 33 / var(--tw-bg-opacity));
 }
 
 .object-cover {
@@ -870,6 +869,11 @@ hr {
   padding: 1px;
 }
 
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .px-\[3px\] {
   padding-left: 3px;
   padding-right: 3px;
@@ -878,11 +882,6 @@ hr {
 .py-\[5px\] {
   padding-top: 5px;
   padding-bottom: 5px;
-}
-
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 
 .pt-4 {
@@ -895,6 +894,11 @@ hr {
 
 .text-justify {
   text-align: justify;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-6xl {
@@ -910,11 +914,6 @@ hr {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
 }
 
 .font-light {
@@ -989,10 +988,6 @@ hr {
 
   .sm\:w-96 {
     width: 24rem;
-  }
-
-  .sm\:max-w-none {
-    max-width: none;
   }
 
   .sm\:grid-cols-2 {
