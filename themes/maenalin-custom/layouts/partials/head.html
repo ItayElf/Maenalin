@@ -5,6 +5,6 @@
   "_internal/twitter_cards.html" .
 }}
 {{ $style := resources.Get "style.css" }}
-<link href="./pagefind/pagefind-ui.css" rel="stylesheet" />
-<link href="./css/pagefind_fix.css" rel="stylesheet" />
+<link href="{{ .Site.BaseURL }}pagefind/pagefind-ui.css" rel="stylesheet" />
+<link href="{{ .Site.BaseURL }}css/pagefind_fix.css" rel="stylesheet" />
 <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
