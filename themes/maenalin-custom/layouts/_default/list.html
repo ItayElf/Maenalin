@@ -4,7 +4,7 @@
 {{ end }}
 
 {{ define "main" }}
-  <script src="./pagefind/pagefind-ui.js"></script>
+  <script src="{{ .Site.BaseURL }}pagefind/pagefind-ui.js"></script>
   <script>
     window.addEventListener("DOMContentLoaded", (event) => {
       new PagefindUI({ element: "#search", showSubResults: true });
