@@ -1,13 +1,21 @@
 {
   "overrides": [
     {
-      "files": ["*.html"],
+      "files": [
+        "*.html"
+      ],
       "options": {
         "parser": "go-template"
       }
     },
     {
-      "files": ["*.html", "*.css", "*.scss", "*.sass", "*.less"],
+      "files": [
+        "*.html",
+        "*.css",
+        "*.scss",
+        "*.sass",
+        "*.less"
+      ],
       "options": {
         "singleQuote": false
       }
