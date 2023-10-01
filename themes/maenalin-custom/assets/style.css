@@ -711,10 +711,6 @@ blockquote {
   height: 3rem;
 }
 
-.h-2 {
-  height: 0.5rem;
-}
-
 .h-28 {
   height: 7rem;
 }
@@ -729,10 +725,6 @@ blockquote {
 
 .w-1\/2 {
   width: 50%;
-}
-
-.w-2 {
-  width: 0.5rem;
 }
 
 .w-56 {
@@ -909,6 +901,11 @@ blockquote {
   line-height: 2rem;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .text-6xl {
   font-size: 3.75rem;
   line-height: 1;
@@ -922,6 +919,11 @@ blockquote {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .font-light {
@@ -1030,6 +1032,11 @@ blockquote {
 
   .sm\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .sm\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
   }
 
   .sm\:text-base {
