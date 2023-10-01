@@ -5,6 +5,7 @@ draft: false
 
 group: ""
 images: []
+layout: single
 sidebar:
   היסטוריה:
     הקמה: אין תאריך רשמי

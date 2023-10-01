@@ -31,9 +31,21 @@
 
 @layer utilities {
   #TableOfContents > * > li {
-    @apply hover:bg-primary/10 rounded;
+    @apply rounded text-right;
+  }
+  #TableOfContents > ul > li > ul {
+    @apply mr-4 rounded;
   }
   #TableOfContents > * > li > a {
-    @apply block;
+    @apply hover:bg-primary/10 block;
+  }
+  #TableOfContents > * > li ul > * > a {
+    @apply hover:bg-primary/10 block;
+  }
+  #TableOfContents > * > li ul > * > a > strong {
+    @apply font-normal;
+  }
+  #TableOfContents > * > li ul > * > a > em {
+    @apply not-italic;
   }
 }

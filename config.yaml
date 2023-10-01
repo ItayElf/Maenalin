@@ -9,7 +9,7 @@ enableGitInfo: true
 markup:
   tableOfContents:
     startLevel: 3
-    endLevel: 3
+    endLevel: 5
     ordered: false
 
   goldmark:
