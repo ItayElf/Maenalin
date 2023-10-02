@@ -423,6 +423,7 @@ video {
 }
 
 a {
+  font-weight: 500;
   --tw-text-opacity: 1;
   color: rgb(162 0 33 / var(--tw-text-opacity));
 }

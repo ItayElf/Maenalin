@@ -63,7 +63,8 @@
             {{ range first 10 .Pages.ByPublishDate.Reverse }}
               <li>
                 <h6 class="mr-4">
-                  &bull; <a href="{{ .Permalink }}">{{ .Title }}</a>
+                  &bull;
+                  <a href="{{ .Permalink }}" class="font-light">{{ .Title }}</a>
                 </h6>
               </li>
             {{ end }}
@@ -97,7 +98,7 @@
 
   const setPage = (page, id) => {
     const title = document.getElementById(id + "-title");
-    title.innerHTML = "נוסף לאחרונה: <a href=\"" + page.url + "\"><strong>" + page.title + "</strong></a>";
+    title.innerHTML = "נוסף לאחרונה: <a href=\"" + page.url + "\">" + page.title + "</a>";
     const content = document.getElementById(id + "-content");
     content.innerHTML = page.description;
     if (page.images.length) {
@@ -109,26 +110,5 @@
 
   setPage(getPageOfTheDay(), "featured");
   setPage(getNewestPage(), "newest");
-  {{/*  const page = getPageOfTheDay();
-  const title = document.getElementById("featured-title");
-  title.innerHTML = "הדף היומי: <a href=\"" + page.url + "\"><strong>" + page.title + "</strong></a>";
-  const content = document.getElementById("featured-content");
-  content.innerHTML = page.description;
-  if (page.images.length) {
-    const image = document.getElementById("featured-image");
-    image.src = page.images[0];
-    image.classList.remove("hidden")
-  }  */}}
-
-  {{/*  const newest = getNewestPage();
-  const newestTitle = document.getElementById("newest-title");
-  newestTitle.innerHTML = "הדף החדש: <a href=\"" + newest.url + "\"><strong>" + newest.title + "</strong></a>";
-  const newestContent = document.getElementById("newest-content");
-  newestContent.innerHTML = newest.description;
-  if (newest.images.length) {
-    const newestImage = document.getElementById("newest-image");
-    newestImage.src = newest.images[0];
-    newestImage.classList.remove("hidden")
-  }  */}}
 </script>
 {{ end }}

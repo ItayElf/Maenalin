@@ -4,7 +4,7 @@
 
 @layer base {
   a {
-    @apply text-primary;
+    @apply text-primary font-medium;
   }
   h2 {
     @apply text-4xl font-light sm:text-6xl;
