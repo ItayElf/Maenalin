@@ -14,9 +14,9 @@
 
     <aside
       role="region"
-      class="mx-auto mt-4 overflow-hidden rounded-sm border bg-white text-sm sm:float-left sm:mb-6 sm:mr-6 sm:mt-0 sm:w-96"
+      class="mx-mt-4 overflow-hidden border bg-white text-sm sm:float-left sm:mb-6 sm:mr-6 sm:mt-0 sm:w-96"
     >
-      <a href="map.html"><img src="images/maenalin.webp" /></a>
+      <a href="map.html"><img class="rounded" src="images/maenalin.webp" /></a>
     </aside>
 
     <div>
@@ -24,15 +24,28 @@
       {{ .Content }}
     </div>
     <hr />
+    <div id="featured" class="mb-8 rounded lg:w-[58%] xl:w-2/3 2xl:w-[73%]">
+      <h3
+        id="featured-title"
+        class="bg-primary/30 border-primary/50 w-full rounded border text-3xl"
+      ></h3>
+      <img
+        src="#"
+        id="featured-image"
+        class="float-right mb-4 ml-4 mt-2 hidden max-h-56 sm:max-h-44 md:max-h-40 lg:max-h-52 xl:max-h-32 2xl:max-h-24"
+      />
+      <div id="featured-content" class="mt-1"></div>
+    </div>
+    <hr />
     <div
-      class="mt-4 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6"
+      class="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6"
     >
       {{ range (sort .Site.Sections "Title" "asc") }}
         <div>
           <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
           <hr />
           <ul class="mt-2">
-            {{ range first 10 .Pages.ByLastmod.Reverse }}
+            {{ range first 10 .Pages.ByPublishDate.Reverse }}
               <li>
                 <h6 class="mr-4">
                   &bull; <a href="{{ .Permalink }}">{{ .Title }}</a>
@@ -44,4 +57,32 @@
       {{ end }}
     </div>
   </main>
+
+  <script>
+    const getPageOfTheDay = () => {
+    const pages = {
+      {{ range ((.Site.RegularPages)) }}
+        "{{ .Permalink }}": {title: "{{.Title}}", description: "{{.Summary}}", images: {{.Params.images}}, url: "{{.Permalink}}"},
+      {{ end -}}
+    };
+    const date = new Date();
+    const noTimeDate = date - (date % 86400000);
+    const id = noTimeDate % Object.keys(pages).length;
+    const page = Object.keys(pages)[id];
+    return pages[page];
+  };
+
+  const page = getPageOfTheDay();
+  const title = document.getElementById("featured-title");
+  title.innerHTML = "הדף היומי: <a href=\"" + page.url + "\"><strong>" + page.title + "</strong></a>";
+  const content = document.getElementById("featured-content");
+  content.innerHTML = page.description;
+  if (page.images.length) {
+    const image = document.getElementById("featured-image");
+    console.log(image.src)
+    image.src = page.images[0];
+    console.log(image.src)
+    image.classList.remove("hidden")
+  }
+</script>
 {{ end }}
