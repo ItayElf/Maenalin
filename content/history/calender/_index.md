@@ -24,6 +24,8 @@ layout: single
 
 הספירה במנאלין מתחילה בשנת 1, שהיא השנה בה נחרבה [**אטילארה-אסארי**](../../settlements/itilara-asari).
 
+<!--more-->
+
 {{< table_of_contents >}}
 
 ### אסטרונומיה

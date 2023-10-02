@@ -4,7 +4,7 @@
 
 @layer base {
   a {
-    @apply text-primary;
+    @apply text-primary font-medium;
   }
   h2 {
     @apply text-4xl font-light sm:text-6xl;
@@ -25,7 +25,7 @@
     @apply my-2;
   }
   blockquote {
-    @apply my-4 border-r-4 border-gray-300 px-4 italic;
+    @apply border-primary/30 my-4 border-r-4 px-4 italic;
   }
 }
 

@@ -95,6 +95,8 @@ sidebar:
 
 &nbsp;
 
+<!--more-->
+
 {{< table_of_contents >}}
 
 &nbsp;
