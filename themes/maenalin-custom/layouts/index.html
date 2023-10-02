@@ -27,7 +27,7 @@
     <div id="featured" class="mb-8 rounded lg:w-[58%] xl:w-2/3 2xl:w-[73%]">
       <h3
         id="featured-title"
-        class="bg-primary/30 border-primary/50 w-full rounded border text-3xl"
+        class="bg-primary/30 border-primary/50 w-full rounded border p-2 text-3xl"
       ></h3>
       <img
         src="#"
@@ -35,6 +35,18 @@
         class="float-right mb-4 ml-4 mt-2 hidden max-h-56 sm:max-h-44 md:max-h-40 lg:max-h-52 xl:max-h-32 2xl:max-h-24"
       />
       <div id="featured-content" class="mt-1"></div>
+    </div>
+    <div id="newest" class="mb-8 w-full rounded md:mb-16">
+      <h3
+        id="newest-title"
+        class="bg-primary/30 border-primary/50 w-full rounded border p-2 text-3xl"
+      ></h3>
+      <img
+        src="#"
+        id="newest-image"
+        class="float-right mb-4 ml-4 mt-2 hidden max-h-56 sm:max-h-44 md:max-h-40 lg:max-h-52 xl:max-h-32 2xl:max-h-24"
+      />
+      <div id="newest-content" class="mt-1"></div>
     </div>
     <hr />
     <div
@@ -59,9 +71,9 @@
   </main>
 
   <script>
-    const getPageOfTheDay = () => {
+  const getPageOfTheDay = () => {
     const pages = {
-      {{ range ((.Site.RegularPages)) }}
+      {{ range (sort (.Site.RegularPages) "Title") }}
         "{{ .Permalink }}": {title: "{{.Title}}", description: "{{.Summary}}", images: {{.Params.images}}, url: "{{.Permalink}}"},
       {{ end -}}
     };
@@ -72,17 +84,48 @@
     return pages[page];
   };
 
-  const page = getPageOfTheDay();
+  const getNewestPage = () => {
+    return {
+      {{ range .Site.RegularPages | first 1 }}
+        title: "{{.Title}}", description: "{{.Summary}}", images: {{.Params.images}}, url: "{{.Permalink}}",
+      {{ end -}}
+    };
+  };
+
+  const setPage = (page, id) => {
+    const title = document.getElementById(id + "-title");
+    title.innerHTML = "הדף היומי: <a href=\"" + page.url + "\"><strong>" + page.title + "</strong></a>";
+    const content = document.getElementById(id + "-content");
+    content.innerHTML = page.description;
+    if (page.images.length) {
+      const image = document.getElementById(id + "-image");
+      image.src = page.images[0];
+      image.classList.remove("hidden")
+     }
+  }
+
+  setPage(getPageOfTheDay(), "featured");
+  setPage(getNewestPage(), "newest");
+  {{/*  const page = getPageOfTheDay();
   const title = document.getElementById("featured-title");
   title.innerHTML = "הדף היומי: <a href=\"" + page.url + "\"><strong>" + page.title + "</strong></a>";
   const content = document.getElementById("featured-content");
   content.innerHTML = page.description;
   if (page.images.length) {
     const image = document.getElementById("featured-image");
-    console.log(image.src)
     image.src = page.images[0];
-    console.log(image.src)
     image.classList.remove("hidden")
-  }
+  }  */}}
+
+  {{/*  const newest = getNewestPage();
+  const newestTitle = document.getElementById("newest-title");
+  newestTitle.innerHTML = "הדף החדש: <a href=\"" + newest.url + "\"><strong>" + newest.title + "</strong></a>";
+  const newestContent = document.getElementById("newest-content");
+  newestContent.innerHTML = newest.description;
+  if (newest.images.length) {
+    const newestImage = document.getElementById("newest-image");
+    newestImage.src = newest.images[0];
+    newestImage.classList.remove("hidden")
+  }  */}}
 </script>
 {{ end }}

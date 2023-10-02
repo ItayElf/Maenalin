@@ -667,6 +667,11 @@ blockquote {
   margin-bottom: 1rem;
 }
 
+.my-1 {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
 .mb-12 {
   margin-bottom: 3rem;
 }
@@ -709,6 +714,10 @@ blockquote {
 
 .mt-4 {
   margin-top: 1rem;
+}
+
+.mb-16 {
+  margin-bottom: 4rem;
 }
 
 .block {
@@ -897,6 +906,10 @@ blockquote {
   padding: 1px;
 }
 
+.p-1 {
+  padding: 0.25rem;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -1038,6 +1051,10 @@ blockquote {
     margin-top: 0px;
   }
 
+  .sm\:mb-16 {
+    margin-bottom: 4rem;
+  }
+
   .sm\:grid {
     display: grid;
   }
@@ -1078,6 +1095,10 @@ blockquote {
 }
 
 @media (min-width: 768px) {
+  .md\:mb-16 {
+    margin-bottom: 4rem;
+  }
+
   .md\:grid {
     display: grid;
   }
@@ -1092,6 +1113,10 @@ blockquote {
 }
 
 @media (min-width: 1024px) {
+  .lg\:mb-16 {
+    margin-bottom: 4rem;
+  }
+
   .lg\:max-h-52 {
     max-height: 13rem;
   }
