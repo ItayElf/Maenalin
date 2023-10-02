@@ -97,7 +97,7 @@
 
   const setPage = (page, id) => {
     const title = document.getElementById(id + "-title");
-    title.innerHTML = "הדף היומי: <a href=\"" + page.url + "\"><strong>" + page.title + "</strong></a>";
+    title.innerHTML = "נוסף לאחרונה: <a href=\"" + page.url + "\"><strong>" + page.title + "</strong></a>";
     const content = document.getElementById(id + "-content");
     content.innerHTML = page.description;
     if (page.images.length) {
