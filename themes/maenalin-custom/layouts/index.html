@@ -96,9 +96,9 @@
     };
   };
 
-  const setPage = (page, id) => {
+  const setPage = (page, id, titleText) => {
     const title = document.getElementById(id + "-title");
-    title.innerHTML = "נוסף לאחרונה: <a href=\"" + page.url + "\">" + page.title + "</a>";
+    title.innerHTML = titleText + ": <a href=\"" + page.url + "\">" + page.title + "</a>";
     const content = document.getElementById(id + "-content");
     content.innerHTML = page.description;
     if (page.images.length) {
@@ -108,7 +108,7 @@
      }
   }
 
-  setPage(getPageOfTheDay(), "featured");
-  setPage(getNewestPage(), "newest");
+  setPage(getPageOfTheDay(), "featured", "הדף היומי");
+  setPage(getNewestPage(), "newest", "נוסף לאחרונה");
 </script>
 {{ end }}
