@@ -16,7 +16,9 @@
       role="region"
       class="mx-mt-4 overflow-hidden border bg-white text-sm sm:float-left sm:mb-6 sm:mr-6 sm:mt-0 sm:w-96"
     >
-      <a href="map.html"><img class="rounded" src="images/maenalin.webp" /></a>
+      <a href="map.html"
+        ><img class="rounded" alt="מנאלין" src="images/maenalin.webp"
+      /></a>
     </aside>
 
     <div>
@@ -96,19 +98,20 @@
     };
   };
 
-  const setPage = (page, id) => {
+  const setPage = (page, id, titleText) => {
     const title = document.getElementById(id + "-title");
-    title.innerHTML = "נוסף לאחרונה: <a href=\"" + page.url + "\">" + page.title + "</a>";
+    title.innerHTML = titleText + ": <a href=\"" + page.url + "\">" + page.title + "</a>";
     const content = document.getElementById(id + "-content");
     content.innerHTML = page.description;
     if (page.images.length) {
       const image = document.getElementById(id + "-image");
       image.src = page.images[0];
+      image.alt = page.title;
       image.classList.remove("hidden")
      }
   }
 
-  setPage(getPageOfTheDay(), "featured");
-  setPage(getNewestPage(), "newest");
+  setPage(getPageOfTheDay(), "featured", "הדף היומי");
+  setPage(getNewestPage(), "newest", "נוסף לאחרונה");
 </script>
 {{ end }}

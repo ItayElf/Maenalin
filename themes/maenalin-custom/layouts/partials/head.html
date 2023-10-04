@@ -4,6 +4,7 @@
 {{ template
   "_internal/twitter_cards.html" .
 }}
+<meta name="description" content="{{ .Summary }}" />
 {{ $style := resources.Get "style.css" }}
 <link href="{{ .Site.BaseURL }}pagefind/pagefind-ui.css" rel="stylesheet" />
 <link href="{{ .Site.BaseURL }}css/pagefind_fix.css" rel="stylesheet" />

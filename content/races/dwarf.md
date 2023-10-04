@@ -4,7 +4,7 @@ date: 2023-06-23T21:22:54+03:00
 draft: false
 
 group: ""
-images: ["images/races/dwarf.jpg"]
+images: ["images/races/dwarf.webp"]
 sidebar:
   מידע כללי:
     אלים:

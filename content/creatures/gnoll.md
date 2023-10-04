@@ -4,7 +4,7 @@ date: 2023-10-02T22:59:24+03:00
 draft: false
 group: ""
 images:
-  - images/creatures/gnoll.jpg
+  - images/creatures/gnoll.webp
 underline: נול מלא כוהן
 sidebar:
   מידע כללי:

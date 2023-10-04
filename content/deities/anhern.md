@@ -4,7 +4,7 @@ date: 2023-06-25T19:35:42+03:00
 draft: false
 
 group: "אלים"
-images: ["images/deities/anhern.jpeg"]
+images: ["images/deities/anhern.webp"]
 sidebar:
   מידע כללי:
     נטייה: סדר ניטרלי

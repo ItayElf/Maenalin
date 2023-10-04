@@ -4,7 +4,7 @@ date: 2023-07-03T19:07:51+03:00
 draft: false
 
 group: ""
-images: ["images/creatures/tahina.jpg"]
+images: ["images/creatures/tahina.webp"]
 sidebar:
   מידע כללי:
     גודל: בינוני

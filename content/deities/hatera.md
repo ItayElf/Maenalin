@@ -4,7 +4,7 @@ date: 2023-06-27T12:39:30+03:00
 draft: false
 
 group: "אלים"
-images: ["images/deities/hatera.jpeg"]
+images: ["images/deities/hatera.webp"]
 sidebar:
   מידע כללי:
     נטייה: רשע

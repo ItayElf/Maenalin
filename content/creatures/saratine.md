@@ -4,7 +4,7 @@ date: 2023-08-16T19:07:51+03:00
 draft: false
 
 group: ""
-images: ["images/creatures/saratine.jpg"]
+images: ["images/creatures/saratine.webp"]
 sidebar:
   מידע כללי:
     גודל: קטן

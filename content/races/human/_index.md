@@ -4,7 +4,7 @@ date: 2023-10-01T16:39:02+03:00
 draft: false
 
 group: ""
-images: ["images/races/human.jpg"]
+images: ["images/races/human.webp"]
 underline: "מימין לשמאל: שורגאזי, מצראני, דאנזביטני ונרפוריאני"
 layout: single
 sidebar:
