@@ -4,7 +4,7 @@ date: 2023-10-02T03:05:24+03:00
 draft: false
 
 group: "אלים זוטרים"
-images: ["images/deities/adelene.jpeg"]
+images: ["images/deities/adelene.webp"]
 sidebar:
   מידע כללי:
     נטייה: טובה

@@ -4,7 +4,7 @@ date: 2023-06-25T14:07:42+03:00
 draft: false
 
 group: "אלים"
-images: ["images/deities/molgazard.jpeg"]
+images: ["images/deities/molgazard.webp"]
 sidebar:
   מידע כללי:
     נטייה: סדר טוב

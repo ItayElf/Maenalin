@@ -4,7 +4,7 @@ date: 2023-10-02T02:13:24+03:00
 draft: false
 
 group: "אלים זוטרים"
-images: ["images/deities/firlas.jpeg"]
+images: ["images/deities/firlas.webp"]
 sidebar:
   מידע כללי:
     נטייה: טובה

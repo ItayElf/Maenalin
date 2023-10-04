@@ -4,7 +4,7 @@ date: 2023-06-28T19:16:42+03:00
 draft: false
 
 group: "אלים"
-images: ["images/deities/nambre.jpeg"]
+images: ["images/deities/nambre.webp"]
 sidebar:
   מידע כללי:
     נטייה: תוהו רשע

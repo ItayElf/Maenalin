@@ -4,7 +4,7 @@ date: 2023-10-02T02:50:24+03:00
 draft: false
 
 group: "אלים זוטרים"
-images: ["images/deities/yolis.jpeg"]
+images: ["images/deities/yolis.webp"]
 sidebar:
   מידע כללי:
     נטייה: טובה

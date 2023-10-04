@@ -4,7 +4,7 @@ date: 2023-06-29T08:55:44+03:00
 draft: false
 
 group: "קדמונים"
-images: ["images/deities/kasir.jpeg"]
+images: ["images/deities/kasir.webp"]
 sidebar:
   מידע כללי:
     נטייה: חסר נטייה

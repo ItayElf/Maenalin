@@ -4,7 +4,7 @@ date: 2023-06-26T8:13:42+03:00
 draft: false
 
 group: "אלים"
-images: ["images/deities/phashtar.jpeg"]
+images: ["images/deities/phashtar.webp"]
 sidebar:
   מידע כללי:
     נטייה: טובה

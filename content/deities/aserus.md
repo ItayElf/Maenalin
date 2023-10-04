@@ -4,7 +4,7 @@ date: 2023-06-27T08:46:55+03:00
 draft: false
 
 group: "אלים"
-images: ["images/deities/aserus.jpeg"]
+images: ["images/deities/aserus.webp"]
 sidebar:
   מידע כללי:
     נטייה: סדר רשע

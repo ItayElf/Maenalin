@@ -4,7 +4,7 @@ date: 2023-06-25T08:22:11+03:00
 draft: false
 
 group: "אלים"
-images: ["images/deities/tinasi.jpeg"]
+images: ["images/deities/tinasi.webp"]
 sidebar:
   מידע כללי:
     נטייה: תוהו טוב
