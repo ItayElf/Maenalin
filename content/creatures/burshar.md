@@ -4,7 +4,7 @@ date: 2023-09-29T21:02:06+03:00
 draft: false
 
 group: ""
-images: ["images/creatures/burshar.jpg"]
+images: ["images/creatures/burshar.webp"]
 sidebar:
   מידע כללי:
     גודל: גדול

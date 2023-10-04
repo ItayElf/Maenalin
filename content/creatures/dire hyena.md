@@ -4,7 +4,7 @@ date: 2023-10-03T01:03:35+03:00
 draft: false
 
 group: ""
-images: ["images/creatures/dire hyena.jpg"]
+images: ["images/creatures/dire hyena.webp"]
 sidebar:
   מידע כללי:
     גודל: גדול

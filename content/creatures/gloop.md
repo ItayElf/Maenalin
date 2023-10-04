@@ -4,7 +4,7 @@ date: 2023-07-04T19:02:06+03:00
 draft: false
 
 group: ""
-images: ["images/creatures/gloop.jpg"]
+images: ["images/creatures/gloop.webp"]
 sidebar:
   מידע כללי:
     גודל: זעיר
