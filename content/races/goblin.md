@@ -4,7 +4,7 @@ date: 2023-10-03T12:58:23+03:00
 draft: false
 
 group: ""
-images: ["images/races/goblin.jpg"]
+images: ["images/races/goblin.webp"]
 underline: גובלין ביצה
 sidebar:
   מידע כללי:
