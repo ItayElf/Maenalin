@@ -87,6 +87,16 @@ const settlements = [
       '<b><a href="../Maenalin/settlements/snavertygg">סנאברטיג</a></b>',
     type: CITY,
   },
+  {
+    position: [1869, 3652],
+    description: "<b>קוצטל</b>",
+    type: CITY,
+  },
+  {
+    position: [1819, 3702],
+    description: "<b>ג'ורדוס</b>",
+    type: TOWN,
+  },
 ];
 
 const getColor = (settlement) => {
@@ -95,6 +105,8 @@ const getColor = (settlement) => {
       return "#AC2020";
     case CITY:
       return "yellow";
+    case TOWN:
+      return "green";
     default:
       return "";
   }
@@ -103,9 +115,12 @@ const getColor = (settlement) => {
 const getRadius = (settlements) => {
   switch (settlements.type) {
     case CAPITAL:
+    case METROPOLIS:
       return 8;
-    default:
+    case CITY:
       return 6;
+    default:
+      return 4;
   }
 };
 
