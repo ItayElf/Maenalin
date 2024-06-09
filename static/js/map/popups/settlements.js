@@ -18,62 +18,67 @@ const settlements = [
   },
   {
     position: [1367, 1798],
-    description: "<b>מצר</b>",
+    description: "<b>מצר (עיר)</b>",
     type: CAPITAL,
   },
   {
     position: [2870, 2382],
-    description: "<b>כרמיל</b>",
+    description: "<b>כרמיל (עיר)</b>",
     type: CAPITAL,
   },
   {
     position: [2944, 2368],
-    description: "<b>ארגמן</b>",
+    description: "<b>ארגמן (עיר)</b>",
     type: CAPITAL,
   },
   {
     position: [2978, 2551],
-    description: "<b>מגניון</b>",
+    description: "<b>מגניון (עיר)</b>",
     type: CAPITAL,
   },
   {
     position: [2916, 2541],
-    description: "<b>קלמין</b>",
+    description: "<b>קלמין (עיר)</b>",
     type: CAPITAL,
   },
   {
     position: [2831, 2540],
-    description: "<b>ציאן</b>",
+    description: "<b>ציאן (עיר)</b>",
     type: CAPITAL,
   },
   {
     position: [2773, 2431],
-    description: "<b>פארור</b>",
+    description: "<b>פארור (עיר)</b>",
     type: CAPITAL,
   },
   {
     position: [2700, 2432],
-    description: "<b>זרניך</b>",
+    description: "<b>זרניך (עיר)</b>",
     type: CAPITAL,
   },
   {
     position: [2766, 2390],
-    description: "<b>פירול</b>",
+    description: "<b>פירול (עיר)</b>",
     type: CAPITAL,
   },
   {
     position: [2804, 2258],
-    description: "<b>אוראולין</b>",
+    description: "<b>אוראולין (עיר)</b>",
     type: CAPITAL,
   },
   {
     position: [2845, 2207],
-    description: "<b>אומברה</b>",
+    description: "<b>אומברה (עיר)</b>",
     type: CAPITAL,
   },
   {
     position: [2931, 2240],
-    description: "<b>ניל</b>",
+    description: "<b>ניל (עיר)</b>",
+    type: CAPITAL,
+  },
+  {
+    position: [3584 - 855, 3790],
+    description: "<b>דגלבן</b>",
     type: CAPITAL,
   },
   {
@@ -95,6 +100,11 @@ const settlements = [
   {
     position: [1819, 3702],
     description: "<b>ג'ורדוס</b>",
+    type: TOWN,
+  },
+  {
+    position: [3584 - 904, 3753],
+    description: "<b>סמקים</b>",
     type: TOWN,
   },
 ];

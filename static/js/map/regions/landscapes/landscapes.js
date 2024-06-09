@@ -1,3 +1,4 @@
+import { getOnEachFeature, getStyle } from "../common.js";
 import LANDSCAPES, {
   DESERT,
   FOREST,
@@ -8,27 +9,6 @@ import LANDSCAPES, {
   SWAMP,
   HILLS,
 } from "./landscapes_data.js";
-
-const onEachFeature = (feature, layer) => {
-  if (!feature.properties) return;
-
-  if (feature.properties.title) {
-    layer.bindTooltip(feature.properties.title, {
-      permanent: true,
-      direction: "center",
-      className: `leaflet-tooltip ${getColor(
-        feature.properties.type
-      )?.color?.replace("#", "a")}`,
-    });
-  }
-
-  if (feature.properties.popupContent) {
-    const popup = L.popup({ pane: "top" }).setContent(
-      feature.properties.popupContent
-    );
-    layer.bindPopup(popup);
-  }
-};
 
 const getColor = (type) => {
   switch (type) {
@@ -53,10 +33,8 @@ const getColor = (type) => {
   }
 };
 
-const style = (feature) => {
-  return { ...getColor(feature.properties.type) };
-};
-
+const style = getStyle(getColor);
+const onEachFeature = getOnEachFeature(getColor);
 const layer = L.geoJSON(LANDSCAPES, { style, onEachFeature });
 
 export const getLandscapeLayers = () => {

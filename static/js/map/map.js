@@ -2,6 +2,7 @@ import {
   getSettlementsDefaultOverlays,
   getSettlementOptionalOverlays,
 } from "./popups/settlements.js";
+import { getKingdomeLayers } from "./regions/kingdoms/kingdoms.js";
 import { getLandscapeLayers } from "./regions/landscapes/landscapes.js";
 import { setTooltipOnZoom } from "./view/fixOnZoom.js";
 
@@ -22,7 +23,11 @@ const getOptionalOverlays = () => {
 };
 
 const getLayers = () => {
-  return { רגיל: defaultLayer, ...getLandscapeLayers() };
+  return {
+    רגיל: defaultLayer,
+    ...getLandscapeLayers(),
+    ...getKingdomeLayers(),
+  };
 };
 
 const setupMeasure = () => {
@@ -70,7 +75,9 @@ const setupMap = (overlays) => {
 
   map.fitBounds(bounds);
   map.setZoom(-1);
-  !isMobile() && map.setMaxBounds(map.getBounds());
+  if (!isMobile()) {
+    map.setMaxBounds(map.getBounds());
+  }
   return map;
 };
 
