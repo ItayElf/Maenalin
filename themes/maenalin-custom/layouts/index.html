@@ -102,7 +102,7 @@
     const title = document.getElementById(id + "-title");
     title.innerHTML = titleText + ": <a href=\"" + page.url + "\">" + page.title + "</a>";
     const content = document.getElementById(id + "-content");
-    content.innerHTML = page.description;
+    content.innerHTML = page.description.replace(/href="([^"]*)"/g, (m, p) => `href="${page.url}${p}"`);
     if (page.images.length) {
       const image = document.getElementById(id + "-image");
       image.src = page.images[0];

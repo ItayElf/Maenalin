@@ -1,0 +1,18 @@
+<svg width="120.25" height="150" viewBox="0 0 120.25 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g>
+        <mask id="b" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"><svg width="120.25" height="150"
+                viewBox="0 0 49.339 61.331" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                <path style="fill:#000;stroke-width:.0766568" class="UnoptimicedTransforms"
+                    d="m-307.397 89.805-24.53 9.199v18.244c0 3.492 0 6.174.626 8.967.767 3.422 2.474 7.01 6.273 12.459 8.572 12.292.18.01 17.748 12.462.046-.012-.024-.03.022-.042V89.857Zm.278 0 24.53 9.199v18.244c0 3.492.001 6.174-.625 8.967-.767 3.422-2.475 7.01-6.274 12.459-8.571 12.292-.18.01-17.747 12.462-.047-.012.024-.03-.023-.042V89.857Z"
+                    transform="translate(331.928 -89.805)" />
+            </svg></mask>
+        <g mask="url(#b)"> <svg width="120.25" height="150" viewBox="0 0 49.339 61.325" xml:space="preserve"
+                xmlns="http://www.w3.org/2000/svg">
+                <path style="fill:hsl(349, 39%, 32%);stroke-width:.824566;paint-order:markers stroke fill"
+                    d="M-642.81 160.128h49.339V98.803h-49.34z" transform="translate(642.81 -98.803)" />
+                <path style="fill:hsl(109, 0%, 5%);stroke-width:.368761;paint-order:markers stroke fill"
+                    d="M-613.206 160.128h9.868V98.803h-9.868zm-19.736 0h9.868V98.803h-9.868z"
+                    transform="translate(642.81 -98.803)" />
+            </svg></g>
+    </g>
+</svg>
