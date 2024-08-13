@@ -26,4 +26,4 @@ sidebar: {}
 
 ---
 
-- &bull; ה1 במולג שנת 0: נפילת [איטילארה-אסארי](../../../settlements/itilara-asari)
+- &bull; ה1 במולג שנת 1: נפילת [איטילארה-אסארי](../../../settlements/itilara-asari)
