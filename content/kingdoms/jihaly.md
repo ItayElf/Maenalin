@@ -32,7 +32,7 @@ sidebar:
 
 &nbsp;
 
-בשנת 1566, ביצעה הממלכה את "טבח סמקים"
+בשנת 1566, ביצעה הממלכה את "[טבח סמקים](../../history/events/redfall-massacre)"
 
 &nbsp;
 
