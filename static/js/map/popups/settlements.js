@@ -109,6 +109,11 @@ const settlements = [
     type: CITY,
   },
   {
+    position: [1630, 2405],
+    description: "<b>מַרגלוֹת</b>",
+    type: CITY,
+  },
+  {
     position: [1819, 3702],
     description: "<b>ג'ורדוס</b>",
     type: TOWN,
