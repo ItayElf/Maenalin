@@ -82,6 +82,11 @@ const settlements = [
     type: CAPITAL,
   },
   {
+    position: [1420, 2127],
+    description: "<b>אנטונלה</b>",
+    type: CAPITAL,
+  },
+  {
     position: [1465, 1886],
     description: "<b>מירין</b>",
     type: CITY,
@@ -98,14 +103,30 @@ const settlements = [
     type: CITY,
   },
   {
+    position: [1333, 1930],
+    description:
+      '<b><a href="../Maenalin/settlements/payshore">שכרחוף</a></b>',
+    type: CITY,
+  },
+  {
     position: [1819, 3702],
     description: "<b>ג'ורדוס</b>",
     type: TOWN,
   },
   {
+    position: [1378, 1910],
+    description: "<b>שדה-קֶדֶר</b>",
+    type: TOWN,
+  },
+  {
     position: [3584 - 904, 3753],
     description: "<b>סמקים</b>",
-    type: TOWN,
+    type: VILLAGE,
+  },
+  {
+    position: [1367, 1876],
+    description: "<b>שחורטל</b>",
+    type: VILLAGE,
   },
 ];
 
@@ -117,6 +138,8 @@ const getColor = (settlement) => {
       return "yellow";
     case TOWN:
       return "green";
+    case VILLAGE:
+      return "grey";
     default:
       return "";
   }
