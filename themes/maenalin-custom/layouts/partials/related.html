@@ -1,0 +1,24 @@
+<div>
+    {{ $rel := .RelPermalink }}
+    {{ $current := replace $rel "/Maenalin" "" }}
+    {{ $sub := substr $current 0 -1 }}
+
+    {{ $matches := slice }}
+
+    {{ range .Site.Pages }}
+      {{ if and (in .Content $sub) (and (not (in .Content $current)) (ne .RelPermalink $rel)) }}
+        {{ $matches = $matches | append . }}
+      {{ end }}
+    {{ end }}
+
+
+    {{if gt (len $matches) 0}}
+        <h5>דפים מקשרים</h5>
+        <hr/>
+        <div class="">
+        {{ range sort $matches "Title" "asc" }}
+            <div>• <a href="{{ .RelPermalink }}">{{ .Title }}</a></div>
+        {{ end }}
+        </div>
+    {{ end }}
+</div>
