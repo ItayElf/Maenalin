@@ -43,6 +43,7 @@
                   {{ with .Params.images }}
                     {{ $url := index (.) 0 }}
                     <img
+                      loading="lazy"
                       class="h-28 w-full object-cover sm:h-40"
                       src="{{ $base }}{{ $url }}"
                       alt="{{ $title }}"
