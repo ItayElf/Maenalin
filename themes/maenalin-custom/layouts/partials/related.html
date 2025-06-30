@@ -15,29 +15,28 @@
     {{if gt (len $matches) 0}}
         <h5>דפים מקשרים</h5>
         <hr/>
-        <div class="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6">
+        <div class="grid grid-cols-4 gap-4 sm:grid-cols-6 lg:grid-cols-8 xl:grid-cols-12">
         {{ range sort $matches "Title" "asc" }}
-            {{/*  <div>• <a href="{{ .RelPermalink }}">{{ .Title }}</a></div>  */}}
             <div>
                 <div class="h-full">
                     {{ $title := .Title }}
-                    <a href="{{ .Permalink }}" class="font-normal">
-                      <div class="rounded border">
+                    <a href="{{ .Permalink }}" class="font-normal block h-full">
+                      <div class="rounded border h-full flex items-center justify-center">
                         <div>
                             {{ if .Params.images }}
                                 {{ with .Params.images }}
                                     {{ $url := index (.) 0 }}
                                     <img
                                     loading="lazy"
-                                    class="h-28 w-full object-cover sm:h-40"
+                                    class="w-full object-cover aspect-square"
                                     src="{{ $base }}{{ $url }}"
                                     alt="{{ $title }}"
                                     />
                                 {{ end }}
                             {{ else }}
-                                <iiv class="h-28 w-full object-cover sm:h-40"></iiv>
+                                <iiv class="w-full object-cover aspect-square"></iiv>
                             {{ end }}
-                          <h5 class="text-center font-normal">{{ .Title }}</h5>
+                          <h5 class="text-center font-normal overflow-clip text-nowrap text-sm">{{ .Title }}</h5>
                         </div>
                       </div>
                     </a>

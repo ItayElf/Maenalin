@@ -37,8 +37,8 @@
         >
           {{ range (sort .Pages "Title") }}
             {{ $title := .Title }}
-            <a href="{{ .Permalink }}" class="font-normal">
-              <div class="rounded border">
+            <a href="{{ .Permalink }}" class="font-normal block h-full">
+              <div class="rounded border h-full flex justify-center items-center">
                 <div>
                   {{ with .Params.images }}
                     {{ $url := index (.) 0 }}
